@@ -1,82 +1,570 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Early stage of cancer</title>
-     <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CancerLens AI - Full Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #f5f7fb
+        }
+        .dashboard-header{
+    background:#fff;
+    height:80px;
+    padding:0 30px;
+    border-bottom:1px solid #edf2f7;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.header-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.welcome-title{
+    font-size:18px;
+    font-weight:700;
+    color:#1e293b;
+    margin:0;
+}
+
+.welcome-subtitle{
+    margin:2px 0 0;
+    font-size:13px;
+    color:#64748b;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.search-wrapper{
+    position:relative;
+    width:260px;
+}
+
+.search-input{
+    height:42px;
+    border:1px solid #e2e8f0;
+    border-radius:12px;
+    padding-left:15px;
+    padding-right:40px;
+    font-size:14px;
+}
+
+.search-input:focus{
+    box-shadow:none;
+    border-color:#0ea5a1;
+}
+
+.search-icon{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#64748b;
+}
+
+.header-icon-btn{
+    position:relative;
+    width:42px;
+    height:42px;
+    border:none;
+    background:transparent;
+    border-radius:50%;
+}
+
+.header-icon-btn i{
+    font-size:20px;
+    color:#334155;
+}
+
+.notification-badge{
+    position:absolute;
+    top:4px;
+    right:2px;
+
+    width:18px;
+    height:18px;
+
+    background:#2563eb;
+    color:white;
+
+    border-radius:50%;
+
+    font-size:10px;
+    font-weight:600;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.user-profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+}
+
+.user-avatar{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+
+    background:#0ea5a1;
+    color:white;
+
+    font-size:13px;
+    font-weight:600;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.user-name{
+    font-size:14px;
+    font-weight:600;
+    color:#334155;
+}
+
+@media(max-width:768px){
+
+    .dashboard-header{
+        flex-direction:column;
+        align-items:flex-start;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    .header-right{
+        width:100%;
+        flex-wrap:wrap;
+    }
+
+    .search-wrapper{
+        width:100%;
+    }
+}
+        .sidebar {
+            background: #fff;
+            min-height: 100vh;
+            border-right: 1px solid #ddd
+        }
+
+        .menu-item {
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 5px
+        }
+
+        .menu-item.active,
+        .menu-item:hover {
+            background: #e8f7f4
+        }
+
+        .section {
+            display: none
+        }
+
+        .section.active {
+            display: block
+        }
+
+        .cardx {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #eee
+        }
+
+        .sidebar {
+            background: #fff;
+            min-height: 100vh;
+            border-right: 1px solid #e8edf2;
+            padding: 20px
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 700;
+            color: #0d9488
+        }
+
+        .menu-item {
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            color: #334155
+        }
+
+        .menu-item.active {
+            background: #e8f7f4;
+            color: #0d9488;
+            font-weight: 600
+        }
+
+        .main {
+            padding: 25px
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px
+        }
+
+        .hero {
+            background: linear-gradient(90deg, #02202a, #013846, #045f6b);
+            border-radius: 22px;
+            color: #fff;
+            padding: 35px
+        }
+
+        .hero-btn {
+            background: #16c2ad;
+            border: none;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 10px
+        }
+
+        .card-ui {
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 18px;
+            padding: 20px
+        }
+
+        .tool-card {
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 16px;
+            padding: 18px;
+            height: 170px
+        }
+
+        .right-card {
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 18px;
+            padding: 18px;
+            margin-bottom: 18px
+        }
+
+        .badge-green {
+            background: #dcfce7;
+            color: #16a34a;
+            padding: 6px 10px;
+            border-radius: 20px
+        }
+
+        .ai-box {
+            background: #fff;
+            border: 1px solid #e9edf3;
+            border-radius: 18px;
+            padding: 20px
+        }
+
+        @media(max-width:991px) {
+            .sidebar {
+                min-height: auto
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="page-wrapper">
+    <div class="container-fluid">
+        <header class="dashboard-header">
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-overlay"></div>
+    <!-- Left Side -->
+    <div class="header-left">
+        <h2 class="welcome-title">
+            Welcome back, Krish 👋
+        </h2>
 
-       <a href="formpage.html">
-    <button class="find-stage-btn">Find the Stage</button>
-</a>
-
-
-        <div class="hero-title-box">
-            <span class="ribbon-icon">🎗️</span>
-            <h2 class="hero-title">Early Stage of Cancer</h2>
-        </div>
-    </section>
-
-    <!-- Content Section -->
-    <section class="content-section">
-
-        <div class="content-block">
-            <h3 class="content-heading">What is Cancer?</h3>
-            <p class="content-text">
-                Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells, which ignore normal body signals to stop dividing, form tumors, invade nearby tissues, and metastasize (spread to other parts of the body).
-            </p>
-        </div>
-
-        <div class="content-block">
-            <h3 class="content-heading">Type of Cancer?</h3>
-            <p class="content-text">
-                Cancer Healer Center delivers patient-centered care through innovative, evidence-based services that uphold the highest standards of safety and transparency. We place patient needs at the forefront of everything we do, regardless of the type or stage of cancer.
-            </p>
-        </div>
-
-        <!-- Cancer Types Grid -->
-        <div class="cancer-grid">
-
-          <a href="detailspage.html" class="cancer-link">
-    <div class="cancer-card">
-        <div class="icon-circle"></div>
-        <p>Anal Cancer Treatment</p>
+        <p class="welcome-subtitle">
+            Your early detection journey starts with knowledge.
+        </p>
     </div>
-</a>
 
-            <div class="cancer-card">
-                <div class="icon-circle"></div>
-                <p>Benign Tumors Treatment</p>
-            </div>
+    <!-- Right Side -->
+    <div class="header-right">
 
-            <div class="cancer-card">
-                <div class="icon-circle"></div>
-                <p>Bladder Cancer Treatment</p>
-            </div>
+        <div class="search-wrapper">
+            <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Search anything...">
 
-            <div class="cancer-card">
-                <div class="icon-circle"></div>
-                <p>Brain Tumor Treatment</p>
-            </div>
-
-            <div class="cancer-card">
-                <div class="icon-circle"></div>
-                <p>Breast Cancer Treatment</p>
-            </div>
-
-            <!-- repeat cards as needed -->
+            <i class="bi bi-search search-icon"></i>
         </div>
 
-    </section>
+        <button class="header-icon-btn">
+            <i class="bi bi-bell"></i>
+            <span class="notification-badge">3</span>
+        </button>
 
-</div>
+        <div class="user-profile">
 
+            <div class="user-avatar">
+                KA
+            </div>
+
+            <span class="user-name">
+                Krish AR
+            </span>
+
+            <i class="bi bi-chevron-down"></i>
+
+        </div>
+
+    </div>
+
+</header>
+        <div class="row">
+            <div class="col-lg-2 sidebar p-3">
+                <h4>CancerLens AI</h4>
+                <div class="menu-item active" onclick="showSection('dashboard',this)">Dashboard</div>
+                <div class="menu-item" onclick="showSection('risk',this)">Risk Assessment</div>
+                <div class="menu-item" onclick="showSection('screening',this)">Screening & Tests</div>
+                <div class="menu-item" onclick="showSection('results',this)">My Results</div>
+                <div class="menu-item" onclick="showSection('insights',this)">Health Insights</div>
+                <div class="menu-item" onclick="showSection('records',this)">Medical Records</div>
+                <div class="menu-item" onclick="showSection('appointments',this)">Appointments</div>
+                <div class="menu-item" onclick="showSection('education',this)">Education Center</div>
+                <div class="menu-item" onclick="showSection('research',this)">Research & Trials</div>
+                <div class="menu-item" onclick="showSection('community',this)">Community</div>
+                <div class="menu-item" onclick="showSection('settings',this)">Settings</div>
+            </div>
+
+            <div class="col-lg-10 p-4">
+
+                <div id="dashboard" class="section active">
+                    <!-- <div class="topbar">
+                        <div>
+                            <h2>Welcome back, Krish 👋</h2>
+                            <p>Your early detection journey starts with knowledge.</p>
+                        </div>
+                        <div><input class="form-control" placeholder="Search anything..."></div>
+                    </div> -->
+
+                    <div class="hero mb-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-7">
+                                <h1>AI‑Powered Early Cancer Detection</h1>
+                                <p>Advanced AI. Evidence-based insights. Personalized care for a healthier tomorrow.</p>
+                                <button class="hero-btn">Start Your Risk Assessment</button>
+                            </div>
+                            <div class="col-md-5 text-center">
+                                <i class="bi bi-heart-pulse" style="font-size:120px"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-ui mb-4">
+                        <h4>Your Tools for Early Detection</h4>
+                        <div class="row g-3 mt-2">
+                            <div class="col-md-3">
+                                <div class="tool-card">Risk Assessment</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Screening & Tests</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">My Results</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Health Insights</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Medical Records</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Appointments</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Education Center</div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="tool-card">Research & Trials</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-box">
+                        <h5>Ask our AI Health Assistant</h5>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Ask anything about cancer or early detection...">
+                            <button class="btn btn-success">Send</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 p-4">
+                        <div class="right-card">
+                            <h5>Your Risk Overview</h5>
+                            <h2 style="color:#16a34a">Low</h2>
+                            <p>Based on current information</p>
+                        </div>
+
+                        <div class="right-card">
+                            <h5>Upcoming</h5>
+                            <p><strong>Mammogram Screening</strong></p>
+                            <p>May 28, 2025 • 10:00 AM</p>
+                            <span class="badge-green">Confirmed</span>
+                        </div>
+
+                        <div class="right-card">
+                            <h5>Daily Tip</h5>
+                            <p>Regular screenings and a healthy lifestyle can significantly improve early detection
+                                outcomes.</p>
+                        </div>
+
+                        <div class="right-card">
+                            <h5>Resources</h5>
+                            <ul>
+                                <li>Understanding Cancer Risks</li>
+                                <li>Screening Guidelines by Age</li>
+                                <li>Lifestyle & Prevention Tips</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="risk" class="section">
+                    <div class="cardx">
+                        <h2>Risk Assessment</h2>
+                        <input class="form-control mb-2" id="age" placeholder="Age">
+                        <select class="form-select mb-2" id="history">
+                            <option>No Family History</option>
+                            <option>Family History</option>
+                        </select>
+                        <button class="btn btn-primary" onclick="calcRisk()">Calculate Risk</button>
+                        <h4 id="riskResult" class="mt-3"></h4>
+                    </div>
+                </div>
+
+                <div id="screening" class="section">
+                    <div class="cardx">
+                        <h2>Screening & Tests</h2>
+                        <ul>
+                            <li>Mammogram - Pending</li>
+                            <li>Blood Test - Completed</li>
+                            <li>CT Scan - Recommended</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="results" class="section">
+                    <div class="cardx">
+                        <h2>My Results</h2>
+                        <table class="table">
+                            <tr>
+                                <th>Report</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Blood Test</td>
+                                <td>Normal</td>
+                            </tr>
+                            <tr>
+                                <td>CT Scan</td>
+                                <td>Pending</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="insights" class="section">
+                    <div class="cardx">
+                        <h2>Health Insights</h2>
+                        <p>Maintain healthy weight, avoid tobacco, schedule regular screenings.</p>
+                    </div>
+                </div>
+
+                <div id="records" class="section">
+                    <div class="cardx">
+                        <h2>Medical Records</h2>
+                        <input type="file" class="form-control">
+                    </div>
+                </div>
+
+                <div id="appointments" class="section">
+                    <div class="cardx">
+                        <h2>Appointments</h2>
+                        <input class="form-control mb-2" placeholder="Doctor Name">
+                        <input type="date" class="form-control mb-2">
+                        <button class="btn btn-success">Book Appointment</button>
+                    </div>
+                </div>
+
+                <div id="education" class="section">
+                    <div class="cardx">
+                        <h2>Education Center</h2>
+                        <ul>
+                            <li>Cancer Prevention</li>
+                            <li>Nutrition Guide</li>
+                            <li>Exercise Tips</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="research" class="section">
+                    <div class="cardx">
+                        <h2>Research & Trials</h2>
+                        <p>Clinical Trial A - Recruiting</p>
+                        <p>Clinical Trial B - Open</p>
+                    </div>
+                </div>
+
+                <div id="community" class="section">
+                    <div class="cardx">
+                        <h2>Community</h2>
+                        <textarea class="form-control" placeholder="Share your thoughts"></textarea>
+                    </div>
+                </div>
+
+                <div id="settings" class="section">
+                    <div class="cardx">
+                        <h2>Settings</h2>
+                        <input class="form-control mb-2" placeholder="Name">
+                        <input class="form-control mb-2" placeholder="Email">
+                        <button class="btn btn-primary">Save Settings</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(id, el) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            document.querySelectorAll('.menu-item').forEach(m => m.classList.remove('active'));
+            el.classList.add('active');
+        }
+        function calcRisk() {
+            let age = parseInt(document.getElementById('age').value) || 0;
+            let hist = document.getElementById('history').value;
+            let risk = 'Low';
+            if (age > 50 || hist.includes('Family')) risk = 'Medium';
+            if (age > 65 && hist.includes('Family')) risk = 'High';
+            document.getElementById('riskResult').innerText = 'Risk Level: ' + risk;
+        }
+    </script>
 </body>
+
 </html>
