@@ -10,151 +10,153 @@
         body {
             background: #f5f7fb
         }
-        .dashboard-header{
-    background:#fff;
-    height:80px;
-    padding:0 30px;
-    border-bottom:1px solid #edf2f7;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
+        .dashboard-header {
+            background: #fff;
+            height: 80px;
+            padding: 0 30px;
+            border-bottom: 1px solid #edf2f7;
 
-.header-left{
-    display:flex;
-    flex-direction:column;
-}
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-.welcome-title{
-    font-size:18px;
-    font-weight:700;
-    color:#1e293b;
-    margin:0;
-}
+        .header-left {
+            display: flex;
+            flex-direction: column;
+        }
 
-.welcome-subtitle{
-    margin:2px 0 0;
-    font-size:13px;
-    color:#64748b;
-}
+        .welcome-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e293b;
+            margin: 0;
+        }
 
-.header-right{
-    display:flex;
-    align-items:center;
-    gap:18px;
-}
+        .welcome-subtitle {
+            margin: 2px 0 0;
+            font-size: 13px;
+            color: #64748b;
+        }
 
-.search-wrapper{
-    position:relative;
-    width:260px;
-}
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
 
-.search-input{
-    height:42px;
-    border:1px solid #e2e8f0;
-    border-radius:12px;
-    padding-left:15px;
-    padding-right:40px;
-    font-size:14px;
-}
+        .search-wrapper {
+            position: relative;
+            width: 260px;
+        }
 
-.search-input:focus{
-    box-shadow:none;
-    border-color:#0ea5a1;
-}
+        .search-input {
+            height: 42px;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding-left: 15px;
+            padding-right: 40px;
+            font-size: 14px;
+        }
 
-.search-icon{
-    position:absolute;
-    right:15px;
-    top:50%;
-    transform:translateY(-50%);
-    color:#64748b;
-}
+        .search-input:focus {
+            box-shadow: none;
+            border-color: #0ea5a1;
+        }
 
-.header-icon-btn{
-    position:relative;
-    width:42px;
-    height:42px;
-    border:none;
-    background:transparent;
-    border-radius:50%;
-}
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #64748b;
+        }
 
-.header-icon-btn i{
-    font-size:20px;
-    color:#334155;
-}
+        .header-icon-btn {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            border: none;
+            background: transparent;
+            border-radius: 50%;
+        }
 
-.notification-badge{
-    position:absolute;
-    top:4px;
-    right:2px;
+        .header-icon-btn i {
+            font-size: 20px;
+            color: #334155;
+        }
 
-    width:18px;
-    height:18px;
+        .notification-badge {
+            position: absolute;
+            top: 4px;
+            right: 2px;
 
-    background:#2563eb;
-    color:white;
+            width: 18px;
+            height: 18px;
 
-    border-radius:50%;
+            background: #2563eb;
+            color: white;
 
-    font-size:10px;
-    font-weight:600;
+            border-radius: 50%;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+            font-size: 10px;
+            font-weight: 600;
 
-.user-profile{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    cursor:pointer;
-}
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-.user-avatar{
-    width:38px;
-    height:38px;
-    border-radius:50%;
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
 
-    background:#0ea5a1;
-    color:white;
+        .user-avatar {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
 
-    font-size:13px;
-    font-weight:600;
+            background: #0ea5a1;
+            color: white;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
+            font-size: 13px;
+            font-weight: 600;
 
-.user-name{
-    font-size:14px;
-    font-weight:600;
-    color:#334155;
-}
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-@media(max-width:768px){
+        .user-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #334155;
+        }
 
-    .dashboard-header{
-        flex-direction:column;
-        align-items:flex-start;
-        height:auto;
-        padding:20px;
-        gap:15px;
-    }
+        @media(max-width:768px) {
 
-    .header-right{
-        width:100%;
-        flex-wrap:wrap;
-    }
+            .dashboard-header {
+                flex-direction: column;
+                align-items: flex-start;
+                height: auto;
+                padding: 20px;
+                gap: 15px;
+            }
 
-    .search-wrapper{
-        width:100%;
-    }
-}
+            .header-right {
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            .search-wrapper {
+                width: 100%;
+            }
+        }
+
         .sidebar {
             background: #fff;
             min-height: 100vh;
@@ -278,6 +280,672 @@
             padding: 20px
         }
 
+        .page-wrap {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .welcome {
+            font-size: 22px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 2px;
+        }
+
+        .welcome-sub {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 16px;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 16px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Hero */
+        .hero {
+            background: #0d2e2a;
+            border-radius: 14px;
+            padding: 28px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            align-items: center;
+            min-height: 210px;
+        }
+
+        .hero h1 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            color: #a0cfc4;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .hero-pills {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .hero-pill {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .hero-pill-icon {
+            width: 28px;
+            height: 28px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .hero-pill-icon i {
+            color: #5dcaa5;
+            font-size: 14px;
+        }
+
+        .hero-pill-text strong {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .hero-pill-text span {
+            color: #a0cfc4;
+            font-size: 11px;
+        }
+
+        .hero-btn {
+            background: #1d9e75;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-btn:hover {
+            background: #17875f;
+        }
+
+        .hero-visual {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .body-glow {
+            width: 160px;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .body-glow>i {
+            font-size: 100px;
+            color: #5dcaa5;
+            opacity: 0.85;
+        }
+
+        .float-icon {
+            position: absolute;
+            background: #0d2e2a;
+            border: 1px solid rgba(29, 158, 117, 0.3);
+            border-radius: 50%;
+            width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .float-icon i {
+            color: #5dcaa5;
+            font-size: 17px;
+        }
+
+        .fi-1 {
+            top: 10px;
+            right: 10px;
+        }
+
+        .fi-2 {
+            bottom: 20px;
+            right: 5px;
+        }
+
+        .fi-3 {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+
+        /* Section card */
+        .section-card {
+            background: #fff;
+            border: 0.5px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        .section-title {
+            font-size: 15px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 3px;
+        }
+
+        .section-sub {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 14px;
+        }
+
+        /* Tools grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .tool-card {
+            background: #f9fafb;
+            border: 0.5px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 14px 12px;
+            cursor: pointer;
+            transition: border-color 0.15s;
+        }
+
+        .tool-card:hover {
+            border-color: #9ca3af;
+        }
+
+        .tool-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .tool-icon i {
+            font-size: 16px;
+        }
+
+        .tool-icon.purple {
+            background: #EEEDFE;
+        }
+
+        .tool-icon.purple i {
+            color: #534AB7;
+        }
+
+        .tool-icon.blue {
+            background: #E6F1FB;
+        }
+
+        .tool-icon.blue i {
+            color: #185FA5;
+        }
+
+        .tool-icon.teal {
+            background: #E1F5EE;
+        }
+
+        .tool-icon.teal i {
+            color: #0F6E56;
+        }
+
+        .tool-icon.coral {
+            background: #FAECE7;
+        }
+
+        .tool-icon.coral i {
+            color: #993C1D;
+        }
+
+        .tool-name {
+            font-size: 12px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 3px;
+        }
+
+        .tool-desc {
+            font-size: 11px;
+            color: #6b7280;
+            line-height: 1.45;
+            margin-bottom: 8px;
+        }
+
+        .tool-link {
+            font-size: 11px;
+            color: #1d9e75;
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-weight: 500;
+        }
+
+        .tool-link i {
+            font-size: 11px;
+        }
+
+        /* AI box */
+        .ai-box {
+            background: #fff;
+            border: 0.5px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 18px;
+        }
+
+        .ai-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 3px;
+        }
+
+        .ai-head-icon {
+            width: 32px;
+            height: 32px;
+            background: #E1F5EE;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ai-head-icon i {
+            color: #0F6E56;
+            font-size: 16px;
+        }
+
+        .ai-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .ai-sub {
+            font-size: 12px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        .ai-input-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: #f9fafb;
+            border: 0.5px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 8px 12px;
+        }
+
+        .ai-input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 13px;
+            color: #1a1a1a;
+            outline: none;
+        }
+
+        .ai-input::placeholder {
+            color: #9ca3af;
+        }
+
+        .ai-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+        }
+
+        .ai-footer-left {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            color: #6b7280;
+        }
+
+        .ai-footer-left i {
+            color: #1d9e75;
+            font-size: 12px;
+        }
+
+        .mic-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+        }
+
+        .mic-btn i {
+            font-size: 18px;
+        }
+
+        .ai-send {
+            width: 32px;
+            height: 32px;
+            background: #1d9e75;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            flex-shrink: 0;
+        }
+
+        .ai-send i {
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .ai-send:hover {
+            background: #17875f;
+        }
+
+        .topic-pill {
+            background: #f9fafb;
+            border: 0.5px solid #d1d5db;
+            border-radius: 20px;
+            padding: 3px 10px;
+            font-size: 11px;
+            color: #6b7280;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        /* Sidebar cards */
+        .side-card {
+            background: #fff;
+            border: 0.5px solid #e5e7eb;
+            border-radius: 14px;
+            padding: 16px;
+        }
+
+        .side-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+
+        .side-head h3 {
+            font-size: 13px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .view-link {
+            font-size: 11px;
+            color: #1d9e75;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .view-link i {
+            font-size: 11px;
+        }
+
+        /* Risk */
+        .risk-label {
+            font-size: 11px;
+            color: #6b7280;
+            margin-bottom: 2px;
+        }
+
+        .risk-level {
+            font-size: 28px;
+            font-weight: 500;
+            color: #16a34a;
+        }
+
+        .risk-sub {
+            font-size: 11px;
+            color: #6b7280;
+            margin-bottom: 10px;
+        }
+
+        .gauge-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .gauge-note {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 8px 10px;
+            display: flex;
+            gap: 6px;
+            align-items: flex-start;
+        }
+
+        .gauge-note i {
+            color: #1d9e75;
+            font-size: 13px;
+            margin-top: 1px;
+            flex-shrink: 0;
+        }
+
+        .gauge-note p {
+            font-size: 11px;
+            color: #6b7280;
+            line-height: 1.4;
+        }
+
+        /* Appointment */
+        .appt-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .appt-icon {
+            width: 32px;
+            height: 32px;
+            background: #E1F5EE;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .appt-icon i {
+            color: #0F6E56;
+            font-size: 15px;
+        }
+
+        .appt-info {
+            flex: 1;
+        }
+
+        .appt-name {
+            font-size: 12px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .appt-time {
+            font-size: 11px;
+            color: #6b7280;
+            margin-top: 1px;
+        }
+
+        .badge-green {
+            background: #E1F5EE;
+            color: #0F6E56;
+            font-size: 10px;
+            font-weight: 500;
+            border-radius: 6px;
+            padding: 3px 8px;
+            white-space: nowrap;
+        }
+
+        /* Daily tip */
+        .tip-quote {
+            font-size: 12px;
+            color: #6b7280;
+            line-height: 1.6;
+            font-style: italic;
+            border-left: 2px solid #1d9e75;
+            padding-left: 10px;
+            margin-top: 4px;
+        }
+
+        .tip-heart {
+            text-align: right;
+            margin-top: 8px;
+        }
+
+        .tip-heart i {
+            color: #e85d8a;
+            font-size: 16px;
+        }
+
+        /* Resources */
+        .res-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .res-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .res-item-icon {
+            width: 26px;
+            height: 26px;
+            background: #f9fafb;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .res-item-icon i {
+            font-size: 13px;
+            color: #6b7280;
+        }
+
+        .res-item-name {
+            font-size: 12px;
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .res-item-link {
+            font-size: 11px;
+            color: #1d9e75;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            cursor: pointer;
+        }
+
+        .res-item-link i {
+            font-size: 10px;
+        }
+
+        .secure-bar {
+            text-align: center;
+            margin-top: 14px;
+            font-size: 10px;
+            color: #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .secure-bar i {
+            font-size: 11px;
+        }
+
+        .dot {
+            width: 2px;
+            height: 2px;
+            background: #9ca3af;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                display: none;
+            }
+        }
+
         @media(max-width:991px) {
             .sidebar {
                 min-height: auto
@@ -290,51 +958,48 @@
     <div class="container-fluid">
         <header class="dashboard-header">
 
-    <!-- Left Side -->
-    <div class="header-left">
-        <h2 class="welcome-title">
-            Welcome back, Krish 👋
-        </h2>
+            <!-- Left Side -->
+            <div class="header-left">
+                <h2 class="welcome-title">
+                    Welcome back, Krish 👋
+                </h2>
 
-        <p class="welcome-subtitle">
-            Your early detection journey starts with knowledge.
-        </p>
-    </div>
-
-    <!-- Right Side -->
-    <div class="header-right">
-
-        <div class="search-wrapper">
-            <input
-                type="text"
-                class="form-control search-input"
-                placeholder="Search anything...">
-
-            <i class="bi bi-search search-icon"></i>
-        </div>
-
-        <button class="header-icon-btn">
-            <i class="bi bi-bell"></i>
-            <span class="notification-badge">3</span>
-        </button>
-
-        <div class="user-profile">
-
-            <div class="user-avatar">
-                KA
+                <p class="welcome-subtitle">
+                    Your early detection journey starts with knowledge.
+                </p>
             </div>
 
-            <span class="user-name">
-                Krish AR
-            </span>
+            <!-- Right Side -->
+            <div class="header-right">
 
-            <i class="bi bi-chevron-down"></i>
+                <div class="search-wrapper">
+                    <input type="text" class="form-control search-input" placeholder="Search anything...">
 
-        </div>
+                    <i class="bi bi-search search-icon"></i>
+                </div>
 
-    </div>
+                <button class="header-icon-btn">
+                    <i class="bi bi-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
 
-</header>
+                <div class="user-profile">
+
+                    <div class="user-avatar">
+                        KA
+                    </div>
+
+                    <span class="user-name">
+                        Krish AR
+                    </span>
+
+                    <i class="bi bi-chevron-down"></i>
+
+                </div>
+
+            </div>
+
+        </header>
         <div class="row">
             <div class="col-lg-2 sidebar p-3">
                 <h4>CancerLens AI</h4>
@@ -354,93 +1019,238 @@
             <div class="col-lg-10 p-4">
 
                 <div id="dashboard" class="section active">
-                    <!-- <div class="topbar">
-                        <div>
-                            <h2>Welcome back, Krish 👋</h2>
-                            <p>Your early detection journey starts with knowledge.</p>
-                        </div>
-                        <div><input class="form-control" placeholder="Search anything..."></div>
-                    </div> -->
+                        <p class="welcome">Welcome back, Krish 👋</p>
+                        <p class="welcome-sub">Your early detection journey starts with knowledge.</p>
 
-                    <div class="hero mb-4">
-                        <div class="row align-items-center">
-                            <div class="col-md-7">
-                                <h1>AI‑Powered Early Cancer Detection</h1>
-                                <p>Advanced AI. Evidence-based insights. Personalized care for a healthier tomorrow.</p>
-                                <button class="hero-btn">Start Your Risk Assessment</button>
-                            </div>
-                            <div class="col-md-5 text-center">
-                                <i class="bi bi-heart-pulse" style="font-size:120px"></i>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="dashboard">
+                            <!-- MAIN COLUMN -->
+                            <div class="main">
 
-                    <div class="card-ui mb-4">
-                        <h4>Your Tools for Early Detection</h4>
-                        <div class="row g-3 mt-2">
-                            <div class="col-md-3">
-                                <div class="tool-card">Risk Assessment</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Screening & Tests</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">My Results</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Health Insights</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Medical Records</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Appointments</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Education Center</div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="tool-card">Research & Trials</div>
-                            </div>
-                        </div>
-                    </div>
+                                <!-- Hero -->
+                                <div class="hero">
+                                    <div class="hero-body">
+                                        <h1>AI-Powered Early<br>Cancer Detection</h1>
+                                        <p>Advanced AI. Evidence-based insights.<br>Personalized care for a healthier
+                                            tomorrow.</p>
+                                        <div class="hero-pills">
+                                            <div class="hero-pill">
+                                                <div class="hero-pill-icon"><i class="ti ti-shield-check"></i></div>
+                                                <div class="hero-pill-text"><strong>Predict Risk</strong><span>Assess
+                                                        your cancer risk factors</span></div>
+                                            </div>
+                                            <div class="hero-pill">
+                                                <div class="hero-pill-icon"><i class="ti ti-scan"></i></div>
+                                                <div class="hero-pill-text"><strong>Detect Early</strong><span>AI-driven
+                                                        insights for early signals</span></div>
+                                            </div>
+                                            <div class="hero-pill">
+                                                <div class="hero-pill-icon"><i class="ti ti-activity"></i></div>
+                                                <div class="hero-pill-text"><strong>Take
+                                                        Action</strong><span>Personalized next steps &amp;
+                                                        guidance</span></div>
+                                            </div>
+                                        </div>
+                                        <button class="hero-btn"><i class="ti ti-arrow-right"></i> Start Your Risk
+                                            Assessment</button>
+                                    </div>
+                                    <div class="hero-visual">
+                                        <div class="body-glow">
+                                            <i class="ti ti-user-scan"></i>
+                                            <div class="float-icon fi-1"><i class="ti ti-lungs"></i></div>
+                                            <div class="float-icon fi-2"><i class="ti ti-dna"></i></div>
+                                            <div class="float-icon fi-3"><i class="ti ti-chart-radar"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="ai-box">
-                        <h5>Ask our AI Health Assistant</h5>
-                        <div class="input-group">
-                            <input class="form-control" placeholder="Ask anything about cancer or early detection...">
-                            <button class="btn btn-success">Send</button>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 p-4">
-                        <div class="right-card">
-                            <h5>Your Risk Overview</h5>
-                            <h2 style="color:#16a34a">Low</h2>
-                            <p>Based on current information</p>
-                        </div>
+                                <!-- Tools -->
+                                <div class="section-card">
+                                    <p class="section-title">Your Tools for Early Detection</p>
+                                    <p class="section-sub">Access personalized tools and resources to take control of
+                                        your health.</p>
+                                    <div class="tools-grid">
+                                        <div class="tool-card">
+                                            <div class="tool-icon purple"><i class="ti ti-shield"></i></div>
+                                            <p class="tool-name">Risk Assessment</p>
+                                            <p class="tool-desc">Evaluate your risk based on lifestyle, family history
+                                                &amp; medical factors.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Start
+                                                Assessment</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon blue"><i class="ti ti-flask"></i></div>
+                                            <p class="tool-name">Screening &amp; Tests</p>
+                                            <p class="tool-desc">Explore recommended screenings &amp; tests for early
+                                                detection.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> View
+                                                Options</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon teal"><i class="ti ti-chart-line"></i></div>
+                                            <p class="tool-name">My Results</p>
+                                            <p class="tool-desc">View and track your test results and reports.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> See Results</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon coral"><i class="ti ti-heart-rate-monitor"></i></div>
+                                            <p class="tool-name">Health Insights</p>
+                                            <p class="tool-desc">AI-powered insights tailored to your health data.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Explore
+                                                Insights</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon blue"><i class="ti ti-folder-open"></i></div>
+                                            <p class="tool-name">Medical Records</p>
+                                            <p class="tool-desc">Securely store and manage your medical documents.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Upload
+                                                Records</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon coral"><i class="ti ti-calendar-event"></i></div>
+                                            <p class="tool-name">Appointments</p>
+                                            <p class="tool-desc">Schedule and manage your screenings and visits.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Book Now</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon teal"><i class="ti ti-book-2"></i></div>
+                                            <p class="tool-name">Education Center</p>
+                                            <p class="tool-desc">Learn about cancer types, symptoms, prevention and
+                                                more.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Start
+                                                Learning</span>
+                                        </div>
+                                        <div class="tool-card">
+                                            <div class="tool-icon purple"><i class="ti ti-microscope"></i></div>
+                                            <p class="tool-name">Research &amp; Trials</p>
+                                            <p class="tool-desc">Explore clinical trials and contribute to life-saving
+                                                research.</p>
+                                            <span class="tool-link"><i class="ti ti-arrow-right"></i> Explore
+                                                Trials</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="right-card">
-                            <h5>Upcoming</h5>
-                            <p><strong>Mammogram Screening</strong></p>
-                            <p>May 28, 2025 • 10:00 AM</p>
-                            <span class="badge-green">Confirmed</span>
-                        </div>
+                                <!-- AI Assistant -->
+                                <div class="ai-box">
+                                    <div class="ai-head">
+                                        <div class="ai-head-icon"><i class="ti ti-brain"></i></div>
+                                        <p class="ai-title">Ask our AI Health Assistant</p>
+                                    </div>
+                                    <p class="ai-sub">Get answers to your questions about cancer, screenings, and next
+                                        steps.</p>
+                                    <div class="ai-input-row">
+                                        <input class="ai-input" type="text"
+                                            placeholder="Ask anything about cancer or early detection..." />
+                                        <button class="mic-btn" aria-label="Voice input"><i
+                                                class="ti ti-microphone"></i></button>
+                                        <button class="ai-send" aria-label="Send"><i
+                                                class="ti ti-arrow-right"></i></button>
+                                    </div>
+                                    <div class="ai-footer">
+                                        <span class="ai-footer-left"><i class="ti ti-sparkles"></i> Powered by AI</span>
+                                        <span class="topic-pill">All topics <i class="ti ti-chevron-down"></i></span>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="right-card">
-                            <h5>Daily Tip</h5>
-                            <p>Regular screenings and a healthy lifestyle can significantly improve early detection
-                                outcomes.</p>
-                        </div>
+                            <!-- SIDEBAR -->
+                            <div class="sidebar">
 
-                        <div class="right-card">
-                            <h5>Resources</h5>
-                            <ul>
-                                <li>Understanding Cancer Risks</li>
-                                <li>Screening Guidelines by Age</li>
-                                <li>Lifestyle & Prevention Tips</li>
-                            </ul>
+                                <!-- Risk Overview -->
+                                <div class="side-card">
+                                    <div class="side-head">
+                                        <h3>Your Risk Overview</h3>
+                                        <a class="view-link" href="#">View details <i class="ti ti-arrow-right"></i></a>
+                                    </div>
+                                    <p class="risk-label">Overall Risk Level</p>
+                                    <p class="risk-level">Low</p>
+                                    <p class="risk-sub">Based on current information</p>
+                                    <div class="gauge-wrap">
+                                        <svg width="130" height="75" viewBox="0 0 130 75"
+                                            aria-label="Risk gauge showing low risk">
+                                            <path d="M15,65 A50,50 0 0,1 115,65" fill="none" stroke="#e5e7eb"
+                                                stroke-width="10" stroke-linecap="round" />
+                                            <path d="M15,65 A50,50 0 0,1 115,65" fill="none" stroke="#16a34a"
+                                                stroke-width="10" stroke-linecap="round" stroke-dasharray="157"
+                                                stroke-dashoffset="115" />
+                                            <circle cx="67" cy="64" r="5" fill="#16a34a" />
+                                            <line x1="67" y1="64" x2="67" y2="48" stroke="#16a34a" stroke-width="2.5"
+                                                stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                    <div class="gauge-note">
+                                        <i class="ti ti-info-circle"></i>
+                                        <p>Risk can change over time. Update your information regularly.</p>
+                                    </div>
+                                </div>
+
+                                <!-- Upcoming -->
+                                <div class="side-card">
+                                    <div class="side-head">
+                                        <h3>Upcoming</h3>
+                                        <a class="view-link" href="#">View all <i class="ti ti-arrow-right"></i></a>
+                                    </div>
+                                    <div class="appt-row">
+                                        <div class="appt-icon"><i class="ti ti-calendar-event"></i></div>
+                                        <div class="appt-info">
+                                            <p class="appt-name">Mammogram Screening</p>
+                                            <p class="appt-time">May 28, 2025 · 10:00 AM</p>
+                                            <p class="appt-time">City Health Center</p>
+                                        </div>
+                                        <span class="badge-green">Confirmed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Daily Tip -->
+                                <div class="side-card">
+                                    <div class="side-head">
+                                        <h3>Daily Tip</h3>
+                                        <div class="tip-heart"><i class="ti ti-heart-filled"></i></div>
+                                    </div>
+                                    <p class="tip-quote">Regular screenings and a healthy lifestyle can significantly
+                                        improve early detection and outcomes.</p>
+                                </div>
+
+                                <!-- Resources -->
+                                <div class="side-card">
+                                    <div class="side-head">
+                                        <h3>Resources</h3>
+                                        <a class="view-link" href="#">View all <i class="ti ti-arrow-right"></i></a>
+                                    </div>
+                                    <div class="res-list">
+                                        <div class="res-item">
+                                            <div class="res-item-icon"><i class="ti ti-clipboard-list"></i></div>
+                                            <div>
+                                                <p class="res-item-name">Understanding Cancer Risks</p>
+                                                <span class="res-item-link">Learn more <i
+                                                        class="ti ti-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="res-item">
+                                            <div class="res-item-icon"><i class="ti ti-user-check"></i></div>
+                                            <div>
+                                                <p class="res-item-name">Screening Guidelines by Age</p>
+                                                <span class="res-item-link">Learn more <i
+                                                        class="ti ti-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="res-item">
+                                            <div class="res-item-icon"><i class="ti ti-leaf"></i></div>
+                                            <div>
+                                                <p class="res-item-name">Lifestyle &amp; Prevention Tips</p>
+                                                <span class="res-item-link">Learn more <i
+                                                        class="ti ti-arrow-right"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="secure-bar">
+                                        <i class="ti ti-lock"></i> Secure <span class="dot"></span> Private <span
+                                            class="dot"></span> HIPAA Compliant
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
-                    </div>
                 </div>
 
                 <div id="risk" class="section">
