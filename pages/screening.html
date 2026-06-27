@@ -1,8 +1,216 @@
 <div class="cardx">
-                        <h2>Screening & Tests</h2>
-                        <ul>
-                            <li>Mammogram - Pending</li>
-                            <li>Blood Test - Completed</li>
-                            <li>CT Scan - Recommended</li>
-                        </ul>
-                    </div>
+
+```
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2>🔬 Screening & Tests</h2>
+        <p class="text-muted mb-0">
+            Stay proactive with recommended cancer screenings and diagnostic tests.
+        </p>
+    </div>
+
+    <button class="btn btn-success">
+        Schedule Screening
+    </button>
+</div>
+
+<!-- Screening Summary -->
+
+<div class="row g-3 mb-4">
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Recommended</h6>
+                <h2 class="text-primary">4</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Scheduled</h6>
+                <h2 class="text-warning">2</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Completed</h6>
+                <h2 class="text-success">5</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Pending</h6>
+                <h2 class="text-danger">1</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Recommended Tests -->
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Recommended Screenings</h5>
+    </div>
+
+    <div class="card-body">
+
+        <table class="table align-middle">
+
+            <thead>
+                <tr>
+                    <th>Screening</th>
+                    <th>Purpose</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Low-Dose CT Scan</td>
+                    <td>Lung Cancer Screening</td>
+                    <td>
+                        <span class="badge bg-danger">
+                            High
+                        </span>
+                    </td>
+                    <td>
+                        <span class="badge bg-warning text-dark">
+                            Recommended
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Colonoscopy</td>
+                    <td>Colon Cancer Screening</td>
+                    <td>
+                        <span class="badge bg-primary">
+                            Medium
+                        </span>
+                    </td>
+                    <td>
+                        <span class="badge bg-success">
+                            Scheduled
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mammogram</td>
+                    <td>Breast Cancer Screening</td>
+                    <td>
+                        <span class="badge bg-primary">
+                            Medium
+                        </span>
+                    </td>
+                    <td>
+                        <span class="badge bg-success">
+                            Completed
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+<!-- Upcoming -->
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Upcoming Screenings</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="alert alert-info">
+            📅 Colonoscopy scheduled for
+            <strong>July 15, 2026</strong>
+        </div>
+
+        <div class="alert alert-warning">
+            📅 Annual Blood Cancer Screening due in
+            <strong>21 days</strong>
+        </div>
+
+    </div>
+</div>
+
+<!-- Test History -->
+
+<div class="card shadow-sm border-0 mb-4">
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Screening History</h5>
+    </div>
+
+    <div class="card-body">
+
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Test</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>12 Apr 2026</td>
+                    <td>Blood Test</td>
+                    <td class="text-success">
+                        Normal
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>20 Jan 2026</td>
+                    <td>Mammogram</td>
+                    <td class="text-success">
+                        No Abnormalities
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>10 Nov 2025</td>
+                    <td>CT Scan</td>
+                    <td class="text-warning">
+                        Follow-Up Suggested
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+<!-- AI Recommendation -->
+
+<div class="alert alert-success">
+    🤖 AI Recommendation:
+    Based on your age, medical history, and risk profile,
+    a Low-Dose CT Scan is recommended within the next 3 months.
+</div>
+```
+
+</div>

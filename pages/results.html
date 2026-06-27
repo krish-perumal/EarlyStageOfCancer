@@ -1,17 +1,275 @@
 <div class="cardx">
-                        <h2>My Results</h2>
-                        <table class="table">
-                            <tr>
-                                <th>Report</th>
-                                <th>Status</th>
-                            </tr>
-                            <tr>
-                                <td>Blood Test</td>
-                                <td>Normal</td>
-                            </tr>
-                            <tr>
-                                <td>CT Scan</td>
-                                <td>Pending</td>
-                            </tr>
-                        </table>
-                    </div>
+
+```
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2>📊 My Results</h2>
+        <p class="text-muted mb-0">
+            View your latest screening results, AI analysis, and personalized recommendations.
+        </p>
+    </div>
+
+    <button class="btn btn-success">
+        Download Full Report
+    </button>
+</div>
+
+<!-- Summary Cards -->
+
+<div class="row g-3 mb-4">
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Overall Status</h6>
+                <h4 class="text-success">Healthy</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Risk Score</h6>
+                <h4 class="text-warning">28%</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+                <h6 class="text-muted">Tests Completed</h6>
+                <h4 class="text-primary">8</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card shadow-sm border-0">
+            <div class="card-body text-center">
+                <h6 class="text-muted">AI Confidence</h6>
+                <h4 class="text-success">94%</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Cancer Risk Summary -->
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Cancer Risk Summary</h5>
+    </div>
+
+    <div class="card-body">
+
+        <table class="table align-middle">
+
+            <thead>
+                <tr>
+                    <th>Cancer Type</th>
+                    <th>Risk Level</th>
+                    <th>Probability</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Lung Cancer</td>
+                    <td>
+                        <span class="badge bg-success">
+                            Low
+                        </span>
+                    </td>
+                    <td>12%</td>
+                    <td>Normal</td>
+                </tr>
+
+                <tr>
+                    <td>Breast Cancer</td>
+                    <td>
+                        <span class="badge bg-warning text-dark">
+                            Moderate
+                        </span>
+                    </td>
+                    <td>31%</td>
+                    <td>Monitor</td>
+                </tr>
+
+                <tr>
+                    <td>Colon Cancer</td>
+                    <td>
+                        <span class="badge bg-success">
+                            Low
+                        </span>
+                    </td>
+                    <td>15%</td>
+                    <td>Normal</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- Latest Test Reports -->
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Latest Test Results</h5>
+    </div>
+
+    <div class="card-body">
+
+        <table class="table align-middle">
+
+            <thead>
+                <tr>
+                    <th>Test</th>
+                    <th>Date</th>
+                    <th>Result</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Blood Test</td>
+                    <td>15 Jun 2026</td>
+                    <td>Within Normal Range</td>
+                    <td>
+                        <span class="badge bg-success">
+                            Normal
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CT Scan</td>
+                    <td>10 Jun 2026</td>
+                    <td>No Significant Findings</td>
+                    <td>
+                        <span class="badge bg-success">
+                            Clear
+                        </span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Biomarker Analysis</td>
+                    <td>08 Jun 2026</td>
+                    <td>Minor Abnormality</td>
+                    <td>
+                        <span class="badge bg-warning text-dark">
+                            Review
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- AI Insights -->
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-header bg-white">
+        <h5 class="mb-0">🤖 AI Clinical Insights</h5>
+    </div>
+
+    <div class="card-body">
+
+        <div class="alert alert-success">
+
+            Based on your screening results, current risk factors,
+            and medical history, no immediate cancer indicators were detected.
+
+            However, continued monitoring and annual screenings are recommended.
+
+        </div>
+
+        <ul>
+
+            <li>Risk profile remains stable.</li>
+
+            <li>No significant progression detected.</li>
+
+            <li>Healthy lifestyle reducing overall risk.</li>
+
+            <li>Follow-up screening recommended after 12 months.</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Recommendation -->
+
+<div class="card shadow-sm border-0 mb-4">
+
+    <div class="card-header bg-white">
+        <h5 class="mb-0">Doctor Recommendations</h5>
+    </div>
+
+    <div class="card-body">
+
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">
+                ✅ Continue annual health screening.
+            </li>
+
+            <li class="list-group-item">
+                ✅ Maintain healthy BMI and exercise routine.
+            </li>
+
+            <li class="list-group-item">
+                ✅ Reduce processed food intake.
+            </li>
+
+            <li class="list-group-item">
+                ✅ Follow-up CT scan after 12 months.
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- Actions -->
+
+<div class="d-flex gap-2 justify-content-end">
+
+    <button class="btn btn-primary">
+        Download PDF
+    </button>
+
+    <button class="btn btn-outline-success">
+        Share With Doctor
+    </button>
+
+    <button class="btn btn-outline-secondary">
+        Print Report
+    </button>
+
+</div>
+```
+
+</div>

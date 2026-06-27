@@ -1,4 +1,260 @@
 <div class="cardx">
-                        <h2>Medical Records</h2>
-                        <input type="file" class="form-control">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>📁 Medical Records</h2>
+            <p class="text-muted mb-0">
+                Securely store, manage, and access your medical documents, reports, prescriptions, and imaging records.
+            </p>
+        </div>
+
+        <button class="btn btn-success">
+            Upload Record
+        </button>
+    </div>
+
+    <!-- Summary Cards -->
+
+    <div class="row g-3 mb-4">
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Total Records</h6>
+                    <h2 class="text-primary">28</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Lab Reports</h6>
+                    <h2 class="text-success">12</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Scans & Imaging</h6>
+                    <h2 class="text-warning">8</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Prescriptions</h6>
+                    <h2 class="text-info">8</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Upload Section -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Upload New Record</h5>
+        </div>
+
+        <div class="card-body">
+
+            <input type="file" class="form-control mb-3" multiple>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Record Category
+                    </label>
+
+                    <select class="form-select">
+                        <option>Lab Report</option>
+                        <option>Radiology Scan</option>
+                        <option>Prescription</option>
+                        <option>Pathology Report</option>
+                        <option>Discharge Summary</option>
+                        <option>Insurance Document</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Hospital / Clinic
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="Enter Hospital Name">
+                </div>
+
+            </div>
+
+            <button class="btn btn-success mt-3">
+                Upload Record
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Recent Records -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Recent Medical Records</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table align-middle">
+
+                <thead>
+                    <tr>
+                        <th>Document</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Hospital</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Blood_Test_Report.pdf</td>
+                        <td>Lab Report</td>
+                        <td>15 Jun 2026</td>
+                        <td>Apollo Hospital</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>CT_Scan_Chest.pdf</td>
+                        <td>Radiology</td>
+                        <td>10 Jun 2026</td>
+                        <td>City Diagnostic Center</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Prescription_June.pdf</td>
+                        <td>Prescription</td>
+                        <td>08 Jun 2026</td>
+                        <td>Health Care Clinic</td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">
+                                View
+                            </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- AI Document Analysis -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">🤖 AI Document Insights</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="alert alert-info">
+
+                AI has analyzed 24 uploaded medical documents.
+
+                Key findings:
+                • No major abnormalities detected.
+                • Screening reports are up to date.
+                • One follow-up recommendation identified.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Record Categories -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Medical Record Categories</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="row g-3">
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        🧪 Lab Reports
                     </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        🩻 CT / MRI Scans
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        💊 Prescriptions
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        🔬 Pathology Reports
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        🏥 Discharge Summaries
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="border rounded p-3">
+                        📄 Insurance Documents
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Security Notice -->
+
+    <div class="alert alert-success">
+
+        🔒 Your records are encrypted and securely stored.
+        Only authorized healthcare professionals can access shared documents.
+
+    </div>
+</div>

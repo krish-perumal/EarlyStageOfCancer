@@ -1,6 +1,261 @@
- <div class="cardx">
-                        <h2>Appointments</h2>
-                        <input class="form-control mb-2" placeholder="Doctor Name">
-                        <input type="date" class="form-control mb-2">
-                        <button class="btn btn-success">Book Appointment</button>
-                    </div>
+<div class="cardx">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2>📅 Appointments</h2>
+            <p class="text-muted mb-0">
+                Schedule, manage, and track your consultations, screenings, and follow-up visits.
+            </p>
+        </div>
+
+        <button class="btn btn-success">
+            + Book New Appointment
+        </button>
+    </div>
+
+    <!-- Summary Cards -->
+
+    <div class="row g-3 mb-4">
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Upcoming</h6>
+                    <h2 class="text-primary">3</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Completed</h6>
+                    <h2 class="text-success">12</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Pending Approval</h6>
+                    <h2 class="text-warning">1</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <h6 class="text-muted">Cancelled</h6>
+                    <h2 class="text-danger">2</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Book Appointment -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Book Appointment</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="row g-3">
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Doctor / Specialist
+                    </label>
+
+                    <select class="form-select">
+                        <option>Select Doctor</option>
+                        <option>Dr. Sarah Johnson (Oncologist)</option>
+                        <option>Dr. Michael Lee (Radiologist)</option>
+                        <option>Dr. Priya Sharma (Cancer Specialist)</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Appointment Type
+                    </label>
+
+                    <select class="form-select">
+                        <option>Consultation</option>
+                        <option>Screening Review</option>
+                        <option>Follow-up Visit</option>
+                        <option>Second Opinion</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Preferred Date
+                    </label>
+
+                    <input type="date" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">
+                        Preferred Time
+                    </label>
+
+                    <input type="time" class="form-control">
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label">
+                        Reason for Visit
+                    </label>
+
+                    <textarea class="form-control" rows="3"
+                        placeholder="Describe your symptoms or purpose of visit"></textarea>
+                </div>
+
+            </div>
+
+            <button class="btn btn-success mt-3">
+                Confirm Appointment
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Upcoming Appointments -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Upcoming Appointments</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table align-middle">
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Specialization</th>
+                        <th>Type</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>15 Jul 2026</td>
+                        <td>Dr. Sarah Johnson</td>
+                        <td>Oncology</td>
+                        <td>Screening Review</td>
+                        <td>
+                            <span class="badge bg-success">
+                                Confirmed
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>28 Jul 2026</td>
+                        <td>Dr. Priya Sharma</td>
+                        <td>Cancer Specialist</td>
+                        <td>Consultation</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">
+                                Pending
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- Appointment History -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">Appointment History</h5>
+        </div>
+
+        <div class="card-body">
+
+            <table class="table align-middle">
+
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th>Purpose</th>
+                        <th>Outcome</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>20 Jun 2026</td>
+                        <td>Dr. Michael Lee</td>
+                        <td>CT Scan Review</td>
+                        <td>Normal Findings</td>
+                    </tr>
+
+                    <tr>
+                        <td>05 Mar 2026</td>
+                        <td>Dr. Sarah Johnson</td>
+                        <td>Annual Screening</td>
+                        <td>No Concerns Identified</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- AI Recommendations -->
+
+    <div class="card shadow-sm border-0 mb-4">
+
+        <div class="card-header bg-white">
+            <h5 class="mb-0">🤖 AI Appointment Recommendations</h5>
+        </div>
+
+        <div class="card-body">
+
+            <div class="alert alert-info">
+
+                Based on your screening results and risk profile,
+                a follow-up consultation with an oncology specialist is recommended within the next 90 days.
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Reminders -->
+
+    <div class="alert alert-warning">
+
+        ⏰ Reminder:
+        Your annual cancer screening appointment is due in 45 days.
+
+    </div>
+</div>
