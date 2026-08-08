@@ -1,248 +1,484 @@
-<div class="cardx">
 
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <div>
-            <h2>📅 Appointments</h2>
-            <p class="text-muted mb-0">
-                Schedule, manage, and track your consultations, screenings, and follow-up visits.
-            </p>
+
+
+<div class="appointment-page">
+
+    <!-- =====================================================
+         PAGE HEADER
+    ===================================================== -->
+
+    <div class="appointment-header">
+
+        <div class="appointment-title">
+
+            <div class="appointment-title-icon">
+                <i class="ti ti-calendar-heart"></i>
+            </div>
+
+            <div>
+
+                <h2>Appointments</h2>
+
+                <p>
+                    Schedule, manage, and track consultations,
+                    screenings, and follow-up visits.
+                </p>
+
+            </div>
+
         </div>
 
-        <button class="btn btn-success">
-            + Book New Appointment
+
+        <button class="book-main-btn">
+
+            <i class="ti ti-plus"></i>
+
+            Book New Appointment
+
         </button>
+
     </div>
 
-    <!-- Summary Cards -->
+
+    <!-- =====================================================
+         SUMMARY CARDS
+    ===================================================== -->
 
     <div class="row g-3 mb-4">
 
-        <div class="col-md-3">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Upcoming</h6>
-                    <h2 class="text-primary">3</h2>
+        <!-- Upcoming -->
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="appointment-stat">
+
+                <div class="stat-row">
+
+                    <div>
+
+                        <div class="stat-label">
+                            Upcoming
+                        </div>
+
+                        <h3 class="stat-number primary">
+                            3
+                        </h3>
+
+                    </div>
+
+                    <div class="stat-icon primary">
+                        <i class="ti ti-calendar-event"></i>
+                    </div>
+
                 </div>
+
+                <div class="stat-footer">
+                    Scheduled visits
+                </div>
+
             </div>
+
         </div>
 
-        <div class="col-md-3">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Completed</h6>
-                    <h2 class="text-success">12</h2>
+
+        <!-- Completed -->
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="appointment-stat">
+
+                <div class="stat-row">
+
+                    <div>
+
+                        <div class="stat-label">
+                            Completed
+                        </div>
+
+                        <h3 class="stat-number success">
+                            12
+                        </h3>
+
+                    </div>
+
+                    <div class="stat-icon success">
+                        <i class="ti ti-circle-check"></i>
+                    </div>
+
                 </div>
+
+                <div class="stat-footer">
+                    Completed appointments
+                </div>
+
             </div>
+
         </div>
 
-        <div class="col-md-3">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Pending Approval</h6>
-                    <h2 class="text-warning">1</h2>
+
+        <!-- Pending -->
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="appointment-stat">
+
+                <div class="stat-row">
+
+                    <div>
+
+                        <div class="stat-label">
+                            Pending Approval
+                        </div>
+
+                        <h3 class="stat-number warning">
+                            1
+                        </h3>
+
+                    </div>
+
+                    <div class="stat-icon warning">
+                        <i class="ti ti-clock"></i>
+                    </div>
+
                 </div>
+
+                <div class="stat-footer">
+                    Awaiting confirmation
+                </div>
+
             </div>
+
         </div>
 
-        <div class="col-md-3">
-            <div class="card border-0 shadow-sm">
-                <div class="card-body text-center">
-                    <h6 class="text-muted">Cancelled</h6>
-                    <h2 class="text-danger">2</h2>
+
+        <!-- Cancelled -->
+
+        <div class="col-xl-3 col-md-6">
+
+            <div class="appointment-stat">
+
+                <div class="stat-row">
+
+                    <div>
+
+                        <div class="stat-label">
+                            Cancelled
+                        </div>
+
+                        <h3 class="stat-number danger">
+                            2
+                        </h3>
+
+                    </div>
+
+                    <div class="stat-icon danger">
+                        <i class="ti ti-calendar-off"></i>
+                    </div>
+
                 </div>
+
+                <div class="stat-footer">
+                    Cancelled visits
+                </div>
+
             </div>
+
         </div>
 
     </div>
 
-    <!-- Book Appointment -->
 
-    <div class="card shadow-sm border-0 mb-4">
+    <!-- =====================================================
+         BOOK APPOINTMENT
+    ===================================================== -->
 
-        <div class="card-header bg-white">
-            <h5 class="mb-0">Book Appointment</h5>
+    <div class="appt-section">
+
+        <div class="appt-section-header">
+
+            <div class="appt-section-icon">
+                <i class="ti ti-calendar-plus"></i>
+            </div>
+
+            <div>
+
+                <h5>Book an Appointment</h5>
+
+                <p>
+                    Choose a specialist, appointment type,
+                    date, and preferred time.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="card-body">
+
+        <div class="appt-section-body">
 
             <div class="row g-3">
 
-                <div class="col-md-6">
+                <!-- Doctor -->
+
+                <div class="col-lg-6">
+
                     <label class="form-label">
                         Doctor / Specialist
                     </label>
 
                     <select class="form-select">
-                        <option>Select Doctor</option>
-                        <option>Dr. Sarah Johnson (Oncologist)</option>
-                        <option>Dr. Michael Lee (Radiologist)</option>
-                        <option>Dr. Priya Sharma (Cancer Specialist)</option>
+
+                        <option selected disabled>
+                            Select Doctor
+                        </option>
+
+                        <option>
+                            Dr. Sarah Johnson (Oncologist)
+                        </option>
+
+                        <option>
+                            Dr. Michael Lee (Radiologist)
+                        </option>
+
+                        <option>
+                            Dr. Priya Sharma (Cancer Specialist)
+                        </option>
+
                     </select>
+
                 </div>
 
-                <div class="col-md-6">
+
+                <!-- Appointment Type -->
+
+                <div class="col-lg-6">
+
                     <label class="form-label">
                         Appointment Type
                     </label>
 
                     <select class="form-select">
-                        <option>Consultation</option>
-                        <option>Screening Review</option>
-                        <option>Follow-up Visit</option>
-                        <option>Second Opinion</option>
+
+                        <option>
+                            Consultation
+                        </option>
+
+                        <option>
+                            Screening Review
+                        </option>
+
+                        <option>
+                            Follow-up Visit
+                        </option>
+
+                        <option>
+                            Second Opinion
+                        </option>
+
                     </select>
+
                 </div>
 
-                <div class="col-md-6">
+
+                <!-- Date -->
+
+                <div class="col-lg-6">
+
                     <label class="form-label">
                         Preferred Date
                     </label>
 
-                    <input type="date" class="form-control">
+                    <input
+                        type="date"
+                        class="form-control">
+
                 </div>
 
-                <div class="col-md-6">
+
+                <!-- Time -->
+
+                <div class="col-lg-6">
+
                     <label class="form-label">
                         Preferred Time
                     </label>
 
-                    <input type="time" class="form-control">
+                    <input
+                        type="time"
+                        class="form-control">
+
                 </div>
 
-                <div class="col-md-12">
+
+                <!-- Reason -->
+
+                <div class="col-12">
+
                     <label class="form-label">
                         Reason for Visit
                     </label>
 
-                    <textarea class="form-control" rows="3"
+                    <textarea
+                        class="form-control"
+                        rows="3"
                         placeholder="Describe your symptoms or purpose of visit"></textarea>
+
                 </div>
 
             </div>
 
-            <button class="btn btn-success mt-3">
+
+            <button class="form-submit">
+
+                <i class="ti ti-calendar-check"></i>
+
                 Confirm Appointment
+
             </button>
 
         </div>
 
     </div>
 
-    <!-- Upcoming Appointments -->
 
-    <div class="card shadow-sm border-0 mb-4">
+    <!-- =====================================================
+         UPCOMING APPOINTMENTS
+    ===================================================== -->
 
-        <div class="card-header bg-white">
-            <h5 class="mb-0">Upcoming Appointments</h5>
+    <div class="appt-section">
+
+        <div class="appt-section-header">
+
+            <div class="appt-section-icon">
+                <i class="ti ti-calendar-event"></i>
+            </div>
+
+            <div>
+
+                <h5>Upcoming Appointments</h5>
+
+                <p>
+                    Your scheduled consultations and visits.
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="card-body">
 
-            <table class="table align-middle">
+        <div class="appt-section-body">
 
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Doctor</th>
-                        <th>Specialization</th>
-                        <th>Type</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
+            <div class="appointment-list">
 
-                <tbody>
 
-                    <tr>
-                        <td>15 Jul 2026</td>
-                        <td>Dr. Sarah Johnson</td>
-                        <td>Oncology</td>
-                        <td>Screening Review</td>
-                        <td>
-                            <span class="badge bg-success">
-                                Confirmed
+                <!-- Appointment 1 -->
+
+                <div class="appointment-item">
+
+                    <div class="appointment-date">
+
+                        <span class="date-day">
+                            15
+                        </span>
+
+                        <span class="date-month">
+                            Jul 2026
+                        </span>
+
+                    </div>
+
+
+                    <div class="appointment-info">
+
+                        <h6>
+                            Screening Review
+                        </h6>
+
+                        <div class="appointment-doctor">
+                            Dr. Sarah Johnson · Oncology
+                        </div>
+
+                        <div class="appointment-meta">
+
+                            <span>
+                                <i class="ti ti-clock"></i>
+                                10:30 AM
                             </span>
-                        </td>
-                    </tr>
 
-                    <tr>
-                        <td>28 Jul 2026</td>
-                        <td>Dr. Priya Sharma</td>
-                        <td>Cancer Specialist</td>
-                        <td>Consultation</td>
-                        <td>
-                            <span class="badge bg-warning text-dark">
-                                Pending
+                            <span>
+                                <i class="ti ti-video"></i>
+                                Consultation
                             </span>
-                        </td>
-                    </tr>
 
-                </tbody>
+                        </div>
 
-            </table>
+                    </div>
 
-        </div>
 
-    </div>
+                    <span class="status-badge status-confirmed">
 
-    <!-- Appointment History -->
+                        <i class="ti ti-circle-check"></i>
 
-    <div class="card shadow-sm border-0 mb-4">
+                        Confirmed
 
-        <div class="card-header bg-white">
-            <h5 class="mb-0">Appointment History</h5>
-        </div>
+                    </span>
 
-        <div class="card-body">
+                </div>
 
-            <table class="table align-middle">
 
-                <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Doctor</th>
-                        <th>Purpose</th>
-                        <th>Outcome</th>
-                    </tr>
-                </thead>
+                <!-- Appointment 2 -->
 
-                <tbody>
+                <div class="appointment-item">
 
-                    <tr>
-                        <td>20 Jun 2026</td>
-                        <td>Dr. Michael Lee</td>
-                        <td>CT Scan Review</td>
-                        <td>Normal Findings</td>
-                    </tr>
+                    <div class="appointment-date">
 
-                    <tr>
-                        <td>05 Mar 2026</td>
-                        <td>Dr. Sarah Johnson</td>
-                        <td>Annual Screening</td>
-                        <td>No Concerns Identified</td>
-                    </tr>
+                        <span class="date-day">
+                            28
+                        </span>
 
-                </tbody>
+                        <span class="date-month">
+                            Jul 2026
+                        </span>
 
-            </table>
+                    </div>
 
-        </div>
 
-    </div>
+                    <div class="appointment-info">
 
-    <!-- AI Recommendations -->
+                        <h6>
+                            Consultation
+                        </h6>
 
-    <div class="card shadow-sm border-0 mb-4">
+                        <div class="appointment-doctor">
+                            Dr. Priya Sharma · Cancer Specialist
+                        </div>
 
-        <div class="card-header bg-white">
-            <h5 class="mb-0">🤖 AI Appointment Recommendations</h5>
-        </div>
+                        <div class="appointment-meta">
 
-        <div class="card-body">
+                            <span>
+                                <i class="ti ti-clock"></i>
+                                02:00 PM
+                            </span>
 
-            <div class="alert alert-info">
+                            <span>
+                                <i class="ti ti-building-hospital"></i>
+                                In-person Visit
+                            </span>
 
-                Based on your screening results and risk profile,
-                a follow-up consultation with an oncology specialist is recommended within the next 90 days.
+                        </div>
+
+                    </div>
+
+
+                    <span class="status-badge status-pending">
+
+                        <i class="ti ti-clock"></i>
+
+                        Pending
+
+                    </span>
+
+                </div>
 
             </div>
 
@@ -250,13 +486,219 @@
 
     </div>
 
-    <!-- Reminders -->
 
-    <div class="alert alert-warning">
+    <!-- =====================================================
+         APPOINTMENT HISTORY
+    ===================================================== -->
 
-        ⏰ Reminder:
-        Your annual cancer screening appointment is due in 45 days.
+    <div class="appt-section">
+
+        <div class="appt-section-header">
+
+            <div class="appt-section-icon">
+                <i class="ti ti-history"></i>
+            </div>
+
+            <div>
+
+                <h5>Appointment History</h5>
+
+                <p>
+                    Review your previous consultations and outcomes.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="appt-section-body">
+
+            <div class="table-responsive">
+
+                <table class="history-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Doctor
+                            </th>
+
+                            <th>
+                                Purpose
+                            </th>
+
+                            <th>
+                                Outcome
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                20 Jun 2026
+                            </td>
+
+                            <td class="history-doctor">
+                                Dr. Michael Lee
+                            </td>
+
+                            <td>
+                                CT Scan Review
+                            </td>
+
+                            <td>
+
+                                <span class="outcome-good">
+
+                                    <i class="ti ti-circle-check"></i>
+
+                                    Normal Findings
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                05 Mar 2026
+                            </td>
+
+                            <td class="history-doctor">
+                                Dr. Sarah Johnson
+                            </td>
+
+                            <td>
+                                Annual Screening
+                            </td>
+
+                            <td>
+
+                                <span class="outcome-good">
+
+                                    <i class="ti ti-circle-check"></i>
+
+                                    No Concerns Identified
+
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
 
     </div>
+
+
+    <!-- =====================================================
+         AI RECOMMENDATIONS
+    ===================================================== -->
+
+    <div class="appt-section">
+
+        <div class="appt-section-header">
+
+            <div class="appt-section-icon">
+                <i class="ti ti-sparkles"></i>
+            </div>
+
+            <div>
+
+                <h5>AI Appointment Recommendations</h5>
+
+                <p>
+                    Personalized scheduling guidance based on your profile.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="appt-section-body">
+
+            <div class="ai-recommendation">
+
+                <div class="ai-rec-icon">
+
+                    <i class="ti ti-brain"></i>
+
+                </div>
+
+
+                <div class="ai-rec-content">
+
+                    <strong>
+                        Follow-up consultation recommended
+                    </strong>
+
+                    <p>
+                        Based on your screening results and risk profile,
+                        a follow-up consultation with an oncology specialist
+                        is recommended within the next 90 days.
+                    </p>
+
+                    <span class="ai-rec-tag">
+                        AI Recommendation
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         REMINDER
+    ===================================================== -->
+
+    <div class="appointment-reminder">
+
+        <div class="reminder-icon">
+
+            <i class="ti ti-bell-ringing"></i>
+
+        </div>
+
+
+        <div class="reminder-content">
+
+            <strong>
+                Upcoming Screening Reminder
+            </strong>
+
+            <p>
+                Your annual cancer screening appointment is due in 45 days.
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
-<script src="Script.js"></script>
